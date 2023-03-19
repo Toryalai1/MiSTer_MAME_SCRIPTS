@@ -140,7 +140,7 @@ if [[ "${INSTALL^^}" == "TRUE" ]] && [ ! -e "/media/fat/Scripts/update_mame-gett
    then
       echo "Downloading update_mame-getter.sh to /media/fat/Scripts"
       echo ""
-      curl ${CURL_RETRY} ${SSL_SECURITY_OPTION} --location -o "/media/fat/Scripts/update_mame-getter.sh" https://raw.githubusercontent.com/MAME-GETTER/MiSTer_MAME_SCRIPTS/master/update_mame-getter.sh || true
+      curl ${CURL_RETRY} ${SSL_SECURITY_OPTION} --location -o "/media/fat/Scripts/update_mame-getter.sh" https://raw.githubusercontent.com/Toryalai1/MiSTer_MAME_SCRIPTS/master/update_mame-getter.sh || true
       echo
 fi
 

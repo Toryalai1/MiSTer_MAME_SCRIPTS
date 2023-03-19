@@ -93,7 +93,7 @@ curl \
     --fail \
     --location \
     -o /tmp/mame-merged-set-getter.sh \
-    https://raw.githubusercontent.com/MAME-GETTER/MiSTer_MAME_SCRIPTS/master/mame-merged-set-getter.sh
+    https://raw.githubusercontent.com/Toryalai1/MiSTer_MAME_SCRIPTS/master/mame-merged-set-getter.sh
 
 chmod +x /tmp/mame-merged-set-getter.sh
 
