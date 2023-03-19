@@ -196,21 +196,21 @@ download_mame_roms_from_mra() {
                   curl ${CURL_RETRY} ${SSL_SECURITY_OPTION} --fail --location -o "${ZIP_PATH}" "https://archive.org/download/mame.0229/${f}"
                      ;;	  
             '0240')
-                  curl ${CURL_RETRY} ${SSL_SECURITY_OPTION} --fail --location -o "${ZIP_PATH}" "https://archive.org/download/mame.0240/${f}"
+                  curl ${CURL_RETRY} ${SSL_SECURITY_OPTION} --fail --location -o "${ZIP_PATH}" "https://archive.org/download/mame-merged/mame-merged/${f}"
                      ;;	  
             'darksoft_neogeo')
                   curl ${CURL_RETRY} ${SSL_SECURITY_OPTION} --fail --location -o "${ZIP_PATH}" "https://archive.org/download/mister_neogeo/${f}"
                      ;;	  
             *)
-                  echo "MAME version not listed in MRA or there is no download source for the version, downloading from .240 set"
-                  curl ${CURL_RETRY} ${SSL_SECURITY_OPTION} --fail --location -o "${ZIP_PATH}" "https://archive.org/download/mame.0240/${f}"
+                  echo "MAME version not listed in MRA or there is no download source for the version, downloading from .252 set"
+                  curl ${CURL_RETRY} ${SSL_SECURITY_OPTION} --fail --location -o "${ZIP_PATH}" "https://archive.org/download/mame-merged/mame-merged/${f}"
                      ;;
          esac
 
 	 # Fallback
          if [ ! -s "$ROMMAME"/"${f}" ] ; then
-             echo "MAME rom not found on $VER set, downloading from .240 set"
-             curl ${CURL_RETRY} ${SSL_SECURITY_OPTION} --fail --location -o "${ZIP_PATH}" "https://archive.org/download/mame.0240/${f}"
+             echo "MAME rom not found on $VER set, downloading from .252 set"
+             curl ${CURL_RETRY} ${SSL_SECURITY_OPTION} --fail --location -o "${ZIP_PATH}" "https://archive.org/download/mame-merged/mame-merged/${f}"
 	 fi
 
          #####CLEAN UP######
