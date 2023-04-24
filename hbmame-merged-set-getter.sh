@@ -205,28 +205,31 @@ download_hbmame_roms_from_mra() {
             '0222')
                   curl ${CURL_RETRY} ${SSL_SECURITY_OPTION} --fail --location -o "${ZIP_PATH}" "https://archive.org/download/hbmame0222roms${f}"
                      ;;
-	    '0224')
+	         '0224')
                   curl ${CURL_RETRY} ${SSL_SECURITY_OPTION} --fail --location -o "${ZIP_PATH}" "https://archive.org/download/hbmame0224roms/${f}"
                      ;;	
-	    '0226')
+	         '0226')
                   curl ${CURL_RETRY} ${SSL_SECURITY_OPTION} --fail --location -o "${ZIP_PATH}" "https://archive.org/download/HBmame0.226-romsmerged/${f}"
                      ;;
-	    '0227')
+	         '0227')
                   curl ${CURL_RETRY} ${SSL_SECURITY_OPTION} --fail --location -o "${ZIP_PATH}" "https://archive.org/download/HBmame0.227-romsmerged/${f}"
                      ;;
-	    '0228')
+	         '0228')
                   curl ${CURL_RETRY} ${SSL_SECURITY_OPTION} --fail --location -o "${ZIP_PATH}" "https://archive.org/download/HBmame0.228-romsmerged/${f}"
                      ;;	
-	    '0229')
+	         '0229')
                   curl ${CURL_RETRY} ${SSL_SECURITY_OPTION} --fail --location -o "${ZIP_PATH}" "https://archive.org/download/HBmame0.229-romsmerged/${f}"
                      ;;
-	    '0230')
+	         '0230')
                   curl ${CURL_RETRY} ${SSL_SECURITY_OPTION} --fail --location -o "${ZIP_PATH}" "https://archive.org/download/HBmame0.230-romsmerged/${f}"
+                     ;;
+            '0244')
+                  curl ${CURL_RETRY} ${SSL_SECURITY_OPTION} --fail --location -o "${ZIP_PATH}" "https://archive.org/download/hbmame_0244_roms/${f}"
                      ;;
 	   	
             *)
-                  echo "MAME version not listed in MRA or there is no download source for the version, downloading from .220 set"
-                  curl ${CURL_RETRY} ${SSL_SECURITY_OPTION} --fail --location -o "${ZIP_PATH}" "https://archive.org/download/hbmame0220/${f}"
+                  echo "MAME version not listed in MRA or there is no download source for the version, downloading from .244 set"
+                  curl ${CURL_RETRY} ${SSL_SECURITY_OPTION} --fail --location -o "${ZIP_PATH}" "https://archive.org/download/hbmame_0244_roms/${f}"
                      ;;
          esac
 
